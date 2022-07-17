@@ -18,7 +18,7 @@
 			$row = $resultado->fetch_assoc();
 			$password_bd = $row['contraseña'];
 			
-			$pass_c = sha1($password);
+			$pass_c = sha1($contraseña);
 			
 			if($password_bd == $pass_c){
 				
