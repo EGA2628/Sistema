@@ -54,8 +54,7 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `email`, `identificacion`, `usuario`, `contraseña`, `nombre`, `tipo_usuario`) VALUES
 (1, '', 0, 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Administrador Web', 1),
-(2, '', 0, 'usuario', 'b665e217b51994789b02b1838e730d6b93baa30f', 'Usuario Estandar', 2),
-(3, '', 0, 'ega2628', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'usuario', 1);
+(2, '', 0, 'usuario', 'b665e217b51994789b02b1838e730d6b93baa30f', 'Usuario Estandar', 2)
 
 --
 -- Índices para tablas volcadas
