@@ -1,31 +1,5 @@
 <?php
-    require "conexion.php";
-
-    //recibir y almacenar los datos
-    $nombre = $_POST["Nombre"];
-    $identificacion = $_POST["Id"];
-    $email = $_POST["Email"];
-    $contraseña = $_POST["Pass"];
-    $Usuario = $_POST["User"];
-
-    //consulta
-    $insertar = "INSERT INTO usuarios(email, identificacion, usuario, password, nombre, tipo_usuario) 
-                 VALUES ('$email', '$identificacion', '$Usuario', '$contraseña', '$nombre', 2)";
-            
-
-    $verificar_usuario = $mysqli_query($mysqli, "SELECT * FROM usuarios WHERE usuarios = '$Usuario'");
-    //ejecutar consulta
-    $resultado = mysqli_query($mysqli, $insertar);
-
-    if (!$resultado) {
-        echo 'Error al registrarse';
-    }else {
-        echo 'Usuario registrado correctamente';
-    }
-
-    //cerrar conexion
-    mysqli_close($mysqli);
-
+    
 ?>
 
 <!DOCTYPE html>
