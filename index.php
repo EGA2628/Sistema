@@ -7,16 +7,16 @@
 	if($_POST){
 		
 		$usuario = $_POST['usuario'];
-		$password = $_POST['contraseña'];
+		$password = $_POST['password'];
 		
-		$sql = "SELECT id, contraseña, nombre, tipo_usuario FROM usuarios WHERE usuario='$usuario'";
+		$sql = "SELECT id, password, nombre, tipo_usuario FROM usuarios WHERE usuario='$usuario'";
 		//echo $sql;
 		$resultado = $mysqli->query($sql);
 		$num = $resultado->num_rows;
 		
 		if($num>0){
 			$row = $resultado->fetch_assoc();
-			$password_bd = $row['contraseña'];
+			$password_bd = $row['password'];
 			
 			$pass_c = sha1($contraseña);
 			
